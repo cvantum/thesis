@@ -92,11 +92,12 @@ if __name__ == '__main__':
                     X = preprocess.transform(dataframe)
                     #print(X)
                     predict = model.predict(X)
-                    if predict > 0.5:
-                        print(predict)
-                        print(suricata_json['src_ip'])
-                        print(suricata_json['dest_ip'])
-                        print(suricata_json['dest_port'])
+                    #if predict < 0.5:
+                    print(predict)
+                    print(type(predict))
+                    print(suricata_json['src_ip'])
+                    print(suricata_json['dest_ip'])
+                    print(suricata_json['dest_port'])
 
         else:
             #print(suricata_json)
