@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'kafka',
+    'elastic',
+    'channels'
 ]
 
 MIDDLEWARE = [
@@ -68,7 +71,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'webservice.wsgi.application'
-
+ASGI_APPLICATION = 'webservice.asgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
